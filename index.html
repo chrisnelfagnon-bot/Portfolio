@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Chrisnel N. FAGNON — Expert Froid et Climatisation. Installation, maintenance et solutions HVAC.">
+  <title>Chrisnel N. FAGNON | Expert Froid & Climatisation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#accueil" class="nav__logo">
+        <span class="nav__logo-icon" aria-hidden="true">❄</span>
+        <span>C.N. FAGNON</span>
+      </a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#accueil" class="nav__link active">Accueil</a></li>
+        <li><a href="#apropos" class="nav__link">À propos</a></li>
+        <li><a href="#projets" class="nav__link">Projets</a></li>
+        <li><a href="#competences" class="nav__link">Compétences</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__grid"></div>
+      </div>
+      <div class="container hero__content">
+        <p class="hero__greeting reveal">Bonjour, je suis</p>
+        <h1 class="hero__name reveal">Chrisnel N. <span class="text-gradient">FAGNON</span></h1>
+        <p class="hero__title reveal">
+          <span class="hero__title-line" id="typed-title"></span>
+          <span class="hero__cursor" aria-hidden="true">|</span>
+        </p>
+        <p class="hero__subtitle reveal">
+          Spécialiste en installation, maintenance et optimisation de systèmes frigorifiques et de climatisation — performance, fiabilité et confort.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#contact" class="btn btn--primary">Me contacter</a>
+          <a href="#projets" class="btn btn--outline">Voir mes projets</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="hero__stat"><span class="hero__stat-number" data-count="3">0</span>+ <span class="hero__stat-label">Années d'expérience</span></div>
+          <div class="hero__stat"><span class="hero__stat-number" data-count="12">0</span>+ <span class="hero__stat-label">Interventions réalisées</span></div>
+          <div class="hero__stat"><span class="hero__stat-number" data-count="50">0</span>+ <span class="hero__stat-label">Clients satisfaits</span></div>
+        </div>
+      </div>
+      <a href="#apropos" class="hero__scroll" aria-label="Défiler vers le bas"><span></span></a>
+    </section>
+    <section class="section about" id="apropos">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__tag">À propos</span>
+          <h2 class="section__title">Qui suis-je ?</h2>
+        </header>
+        <div class="about__grid">
+          <div class="about__visual reveal">
+            <div class="about__card">
+              <div class="about__avatar" aria-hidden="true"><span>CNF</span></div>
+              <ul class="about__highlights">
+                <li><strong>Domaine</strong><span>Froid industriel & climatisation</span></li>
+                <li><strong>Approche</strong><span>Diagnostic précis, solutions durables</span></li>
+                <li><strong>Disponibilité</strong><span>Interventions & conseils sur mesure</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="about__content reveal">
+            <p class="about__lead">Passionné par les technologies thermiques, j'accompagne particuliers et professionnels dans la conception, l'installation et la maintenance de leurs équipements frigorifiques et climatiques.</p>
+            <p>Mon expertise couvre les systèmes split, multi-split, VRV/VRF, chambres froides et équipements de réfrigération commerciale. Je m'engage à garantir des installations conformes aux normes, une efficacité énergétique optimale et un service après-vente réactif.</p>
+            <div class="about__tabs" role="tablist">
+              <button class="about__tab active" role="tab" aria-selected="true" data-tab="mission">Mission</button>
+              <button class="about__tab" role="tab" aria-selected="false" data-tab="valeurs">Valeurs</button>
+              <button class="about__tab" role="tab" aria-selected="false" data-tab="objectifs">Objectifs</button>
+            </div>
+            <div class="about__panel active" id="panel-mission" role="tabpanel"><p>Offrir des solutions de froid et climatisation fiables, économes en énergie et adaptées aux besoins réels de chaque client, avec un suivi transparent de la première visite à la mise en service.</p></div>
+            <div class="about__panel" id="panel-valeurs" role="tabpanel" hidden><p>Rigueur technique, honnêteté, respect des délais et sens du détail. Chaque intervention est traitée avec le même niveau d'exigence.</p></div>
+            <div class="about__panel" id="panel-objectifs" role="tabpanel" hidden><p>Développer des guides et ressources techniques accessibles, former les équipes sur les bonnes pratiques HVAC, et contribuer à la transition vers des fluides plus respectueux de l'environnement.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section projects" id="projets">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__tag">Projets</span>
+          <h2 class="section__title">Réalisations & ressources</h2>
+          <p class="section__desc">Une sélection de travaux et documents techniques que j'ai conçus ou menés.</p>
+        </header>
+        <div class="projects__grid">
+          <article class="project-card reveal">
+            <div class="project-card__icon" aria-hidden="true">📘</div>
+            <span class="project-card__category">Documentation</span>
+            <h3 class="project-card__title">Guide technique — Maintenance préventive</h3>
+            <p class="project-card__desc">Manuel complet sur les contrôles périodiques des unités de climatisation : filtres, pressions, étanchéité et bonnes pratiques de sécurité.</p>
+            <div class="project-card__tags"><span>HVAC</span><span>Maintenance</span></div>
+            <a href="https://github.com/chrisnelfagnon-bot/guide-frigoriste" target="_blank" rel="noopener noreferrer" class="project-card__link">Consulter sur GitHub →</a>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card__icon" aria-hidden="true">🏢</div>
+            <span class="project-card__category">Installation</span>
+            <h3 class="project-card__title">Climatisation VRV — Bureaux commerciaux</h3>
+            <p class="project-card__desc">Étude thermique, dimensionnement et mise en service d'un système multi-zones pour un espace de 400 m² avec monitoring énergétique.</p>
+            <div class="project-card__tags"><span>VRV</span><span>Commercial</span></div>
+            <a href="#contact" class="project-card__link">Demander des détails →</a>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card__icon" aria-hidden="true">🧊</div>
+            <span class="project-card__category">Froid industriel</span>
+            <h3 class="project-card__title">Chambre froide — Restauration</h3>
+            <p class="project-card__desc">Conception et installation d'une chambre froide avec groupe condenseur, alarmes de température et protocole HACCP documenté.</p>
+            <div class="project-card__tags"><span>Réfrigération</span><span>HACCP</span></div>
+            <a href="#contact" class="project-card__link">Demander des détails →</a>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card__icon" aria-hidden="true">🔧</div>
+            <span class="project-card__category">Diagnostic</span>
+            <h3 class="project-card__title">Audit énergétique — Parc climatisation</h3>
+            <p class="project-card__desc">Analyse de splits existants, détection de fuites, recommandations de remplacement et estimation des économies annuelles.</p>
+            <div class="project-card__tags"><span>Audit</span><span>Éco-énergie</span></div>
+            <a href="#contact" class="project-card__link">Demander un audit →</a>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card__icon" aria-hidden="true">📋</div>
+            <span class="project-card__category">Formation</span>
+            <h3 class="project-card__title">Fiches procédures — Manipulation fluides</h3>
+            <p class="project-card__desc">Fiches opérationnelles pour la manipulation sécurisée des fluides frigorigènes conformément à la réglementation en vigueur.</p>
+            <div class="project-card__tags"><span>Sécurité</span><span>Réglementation</span></div>
+            <a href="https://github.com/chrisnelfagnon-bot/guide-frigoriste" target="_blank" rel="noopener noreferrer" class="project-card__link">Voir les ressources →</a>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card__icon" aria-hidden="true">🏠</div>
+            <span class="project-card__category">Résidentiel</span>
+            <h3 class="project-card__title">Pack confort — Villas & habitations</h3>
+            <p class="project-card__desc">Installation de systèmes split inverter avec programmation intelligente et accompagnement client sur l'utilisation optimale.</p>
+            <div class="project-card__tags"><span>Inverter</span><span>Résidentiel</span></div>
+            <a href="#contact" class="project-card__link">Obtenir un devis →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="competences">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__tag">Compétences</span>
+          <h2 class="section__title">Expertise technique</h2>
+          <p class="section__desc">Domaines maîtrisés au quotidien sur le terrain et en bureau d'études léger.</p>
+        </header>
+        <div class="skills__categories">
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title">Froid & Climatisation</h3>
+            <div class="skills__badges">
+              <span class="skill-badge">Installation split / multi-split</span>
+              <span class="skill-badge">Systèmes VRV / VRF</span>
+              <span class="skill-badge">Chambres froides</span>
+              <span class="skill-badge">Groupes frigorifiques</span>
+              <span class="skill-badge">Récupération fluides</span>
+              <span class="skill-badge">Détente directe / indirecte</span>
+            </div>
+          </div>
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title">Maintenance & diagnostic</h3>
+            <div class="skills__badges">
+              <span class="skill-badge">Maintenance préventive</span>
+              <span class="skill-badge">Dépannage urgent</span>
+              <span class="skill-badge">Détection de fuites</span>
+              <span class="skill-badge">Analyse pressions / températures</span>
+              <span class="skill-badge">Étanchéité circuits</span>
+              <span class="skill-badge">Mise en service</span>
+            </div>
+          </div>
+          <div class="skills__group reveal">
+            <h3 class="skills__group-title">Outils & normes</h3>
+            <div class="skills__badges">
+              <span class="skill-badge">Manomètres & vacuomètres</span>
+              <span class="skill-badge">Détecteurs électroniques</span>
+              <span class="skill-badge">Normes F-Gas</span>
+              <span class="skill-badge">HACCP</span>
+              <span class="skill-badge">Lecture plans techniques</span>
+              <span class="skill-badge">Rédaction rapports</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills__bars reveal">
+          <div class="skill-bar">
+            <div class="skill-bar__header"><span>Installation & mise en service</span><span>95%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__header"><span>Diagnostic & dépannage</span><span>92%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="92"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__header"><span>Relation client & conseil</span><span>88%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="88"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__tag">Contact</span>
+          <h2 class="section__title">Travaillons ensemble</h2>
+          <p class="section__desc">Décrivez votre besoin — devis, intervention ou conseil technique. Je vous réponds rapidement.</p>
+        </header>
+        <div class="contact__grid">
+          <form class="contact__form reveal" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required autocomplete="name">
+              <span class="form-error" id="error-name"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="vous@exemple.com" required autocomplete="email">
+              <span class="form-error" id="error-email"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <select id="subject" name="subject" required>
+                <option value="">Choisir un sujet</option>
+                <option value="devis">Demande de devis</option>
+                <option value="maintenance">Maintenance / entretien</option>
+                <option value="depannage">Dépannage urgent</option>
+                <option value="conseil">Conseil technique</option>
+                <option value="autre">Autre</option>
+              </select>
+              <span class="form-error" id="error-subject"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre problème..." required></textarea>
+              <span class="form-error" id="error-message"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span class="btn__text">Envoyer le message</span>
+              <span class="btn__loader" aria-hidden="true"></span>
+            </button>
+            <p class="form-success" id="form-success" hidden>
+              Merci ! Votre message a été préparé. Votre client mail va s'ouvrir pour l'envoi.
+            </p>
+          </form>
+          <aside class="contact__info reveal">
+            <div class="contact__card">
+              <h3>Coordonnées directes</h3>
+              <ul>
+                <li><span class="contact__icon" aria-hidden="true">✉</span><a href="mailto:chrisnelfagnon@gmail.com">chrisnelfagnon@gmail.com</a></li>
+                <li><span class="contact__icon" aria-hidden="true">📞</span><a href="tel:+2290196940538">+229 01 96 94 05 38</a></li>
+                <li><span class="contact__icon" aria-hidden="true">💬</span><a href="https://wa.me/message/53NNPDFUJGGUG1" target="_blank" rel="noopener noreferrer">WhatsApp — message direct</a></li>
+                <li><span class="contact__icon" aria-hidden="true">📍</span><span>Bénin — Interventions locales & régionales</span></li>
+              </ul>
+            </div>
+            <div class="contact__card contact__card--social">
+              <h3>Réseaux</h3>
+              <ul>
+                <li><a href="https://www.facebook.com/chrisnelfag27" target="_blank" rel="noopener noreferrer">Facebook — Chris FG</a></li>
+                <li><a href="https://github.com/chrisnelfagnon-bot/guide-frigoriste" target="_blank" rel="noopener noreferrer">GitHub — Guide frigoriste</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#accueil" class="footer__logo">Chrisnel N. FAGNON</a>
+        <p>Expert Froid et Climatisation</p>
+        <p class="footer__copy">&copy; <span id="year"></span> Tous droits réservés.</p>
+      </div>
+      <nav class="footer__social" aria-label="Réseaux sociaux et contact">
+        <a href="https://github.com/chrisnelfagnon-bot/guide-frigoriste" target="_blank" rel="noopener noreferrer" class="footer__link" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.facebook.com/chrisnelfag27" target="_blank" rel="noopener noreferrer" class="footer__link" title="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <span>Facebook</span>
+        </a>
+        <a href="https://wa.me/message/53NNPDFUJGGUG1" target="_blank" rel="noopener noreferrer" class="footer__link" title="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="mailto:chrisnelfagnon@gmail.com" class="footer__link" title="E-mail">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span>E-mail</span>
+        </a>
+        <a href="tel:+2290196940538" class="footer__link" title="Téléphone">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <span>Téléphone</span>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
